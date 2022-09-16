@@ -15,7 +15,7 @@ N/A
 ## Usage
 
 To generate a new password click on the red button. The application should then display a series of prompts to collect information
-on how long you want your password to be and what type of characters you would like included. Then after you have entered an acceptable password length (between 8 and 128 charcters) and made at least one character selection your new password will be displayed in the dislay box.
+on how long you want your password to be and what type of characters you would like included. Then after you have entered an acceptable password length (between 8 and 128 charcters) and made at least one character selection your new password will be displayed in the dislay box. To visit the deployed application follow this link: https://trufl.github.io/password-generator/
 
 
     ```md
