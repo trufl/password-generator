@@ -2,12 +2,11 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The password generator was the third challenge in our web development bootcamp. It was designed to challenge us with applying 
+what we had learned that week about JavaScript. Some of the new tools I used were:
+- Prompting the user for input and storing that input into a variable
+- Using a confirm statement to give the user yes or no options
+- Using methods to listen for user generated events
 
 ## Installation
 
@@ -15,9 +14,9 @@ N/A
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To generate a new password click on the red button. The application should then display a series of prompts to collect information
+on how long you want your password to be and what type of characters you would like included. Then after you have entered an acceptable password length (between 8 and 128 charcters) and made at least one character selection your new password will be displayed in the dislay box.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
     ![screenshot](assets/images/screenshot.png)
