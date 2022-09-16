@@ -15,7 +15,7 @@ function generatePassword() {
     const lowerCaseArr = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
     const upperCaseArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
     const numbersArr = [0,1,2,3,4,5,6,7,8,9];
-    const specCharArr = ["?",">","<","!","@","$","#","%","^","(",")"];
+    const specCharArr = ["?",">","<","!","$","#","%","^","(",")"];
     let passwordArr = [];
     let password;
 
@@ -50,9 +50,10 @@ function generatePassword() {
         if(!hasLowerCase && !hasUpperCase && !hasNumbers && !hasSpecChar) {
             alert("Please select at least one of the options to have in your password.");
         } else {
-            /*password = getPassword(passwordArr, numChar);*/
+            password = getPassword(passwordArr, numChar);
             return password;
         }
+
     } else {
         alert("Please enter a valid number bewteen 8 and 128");
     }
@@ -74,6 +75,13 @@ function getNewArray(oldArray, passwordArr) {
 
 function getPassword(passwordArr, numChar) {
     let password;
+    const newArray = [];
+
+    for (let x = 0; x < numChar; x++) {
+        newArray.push(passwordArr[(Math.floor(Math.random() * passwordArr.length) + 0)]);
+    }
+
+    password = newArray.join("");
 
     return password;
 }
@@ -91,18 +99,33 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-/* test for getNewArray function 
+/*
+test for getNewArray function and final test result for js code
 const arr1 = ["a","b","c"];
 const arr2 = [1,2,3];
 let arr3 = [];
 
+console.log("Array 1: ");
 arr3 = getNewArray(arr1, arr3);
 for(let x = 0; x < arr3.length; x++) {
     console.log(arr3[x]);
 }
 
-
+console.log("Array 2: ");
 arr3 = getNewArray(arr2, arr3);
 for(let x = 0; x < arr3.length; x++) {
     console.log(arr3[x]);
-}*/
+}
+
+let password;
+const newArray = [];
+let int = 8;
+
+for (let x = 0; x < int; x++) {
+    newArray.push(arr3[(Math.floor(Math.random() * arr3.length) + 0)]);
+}
+
+password = newArray.join("");
+
+console.log(`Password: ${password}`);
+*/
